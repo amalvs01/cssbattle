@@ -1,0 +1,36 @@
+<div></div>
+
+<style>
+  body{
+    background: #F3AC3C;
+  }
+
+  div {
+    width: 200px;
+    height: 200px;
+    background: #1A4341;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  div:before{
+    content:'';
+    width: 100px;
+    height: 100px;
+    background: #998235;
+    position:absolute;
+    bottom: 0;
+  }
+  
+  div:after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #F3AC3C;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+  }
+</style>

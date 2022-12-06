@@ -1,0 +1,32 @@
+<div></div>
+
+<style>
+  body{
+    background: #E38F66;
+  }
+  
+  div {
+    width: 200px;
+    height: 200px;
+    background:#AA445F ;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:before{
+    content:'';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border: 30px solid #F7EC7D;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+</style>

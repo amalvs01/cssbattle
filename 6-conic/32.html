@@ -1,0 +1,24 @@
+<div></div>
+
+<style>
+  body:before,
+  body:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 200px;
+    mix-blend-mode:screen;
+  }
+  
+  body:before{
+    background: #A3A368;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  body:after{
+    background: #F3AC3C;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+</style>

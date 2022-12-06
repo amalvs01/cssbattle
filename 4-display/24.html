@@ -1,0 +1,41 @@
+<div></div>
+<div></div>
+
+<style>
+  body{
+    background: #62306D;
+  }
+  
+  div {
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    position: absolute;
+  }
+  div:before{
+   content: '';
+   width: 100px;
+   height: 100px;
+   background: #F7EC7D;
+   border-radius: 50px;
+   position: absolute;
+  }
+  
+  div:nth-of-type(1){
+    background: #AA445F;
+    top: 50px;
+    right: 50%;
+    transform: translate(-20px);
+  }
+
+  div:nth-of-type(1):before{
+    bottom: 0;
+  }
+  
+  div:nth-of-type(2){
+    background: #E38F66;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(20px);
+  }
+</style>
