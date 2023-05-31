@@ -1,0 +1,46 @@
+<div></div>
+
+<style>
+  body{
+    background: #998235;
+  }
+
+  
+  div,:before,:after{
+    content: '';
+    position: absolute;
+  }
+  div {
+    width: 150px;
+    height: 75px;
+    background:linear-gradient(to right,
+                               #191919 25px,
+                               #EFF33C 25px 35px,
+                               #191919 35px 60px,
+                               #EFF33C 60px 70px,
+                               #191919 70px 95px,
+                               #EFF33C 95px 100%);
+    border-radius: 60px;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+  div:before{
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 50% 50% 0;
+    transform: translateY(-100%); 
+    -webkit-box-reflect: right;
+  }
+
+  div:after{
+    width: 15px;
+    height: 15px;
+    background: #191919;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+  }
+</style>

@@ -1,0 +1,38 @@
+<div></div>
+
+<style>
+  body{
+    background: #191919;
+  }
+
+  *:before,
+  *:after{
+    content: '';
+    position: absolute;
+  }
+
+  body:before{
+    width: 40px;
+    height: 40px;
+    border: 20px solid #714B67;
+    border-radius: 50%;
+    top: calc(50% + 12px);
+    left: 37px;
+    transform: translateY(-50%);
+    box-shadow: 82px 0 0 -20px #191919,
+                82px 0 0 0 #8F8F8F,
+                164px 0 0 -20px #191919,
+                164px 0 0 0 #8F8F8F,
+                246px 0 0 -20px #191919,
+                246px 0 0 0 #8F8F8F;
+  }
+
+  body:after{
+    background: #8F8F8F;
+    width: 20px;
+    height: 65px;
+    border-radius: 10px;
+    bottom: calc(50% - 17px);
+    right: calc(50% + 1px);
+  }
+</style>

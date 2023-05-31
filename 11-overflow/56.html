@@ -1,0 +1,75 @@
+<w>
+  <t></t>
+  <b></b>
+</w>
+  <style>
+
+    body{
+    background: #191919;
+    }
+
+    w{
+      position: absolute;
+      right: 50%;
+      top: 85px;
+      -webkit-box-reflect: right;
+    }
+    
+    :before,:after{
+      content: '';
+      background: #191919;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+
+    t,b {
+      background:#4F77FF ;
+      display: block;
+      position: relative;
+    }
+    
+  t{
+    width: 60px;
+    height: 100px;
+    border-radius: 100px 0 0 18px;
+    z-index: 1;
+  }
+
+    t:before{
+      width: 40px;
+      height: 40px;
+      bottom: 7px;
+      right: 5px;
+    }
+
+    t:after{
+      width: 20px;
+      height: 20px;
+      bottom: -11px;
+      right: -11px;
+    }
+
+    b{
+    width: 40px;
+    height: 30px;
+    border-radius: 0 0 0 20px;
+    margin-left: auto;
+    }
+
+    b:before{
+      width: 10px;
+      height: 10px;
+      border-radius: 10px 10px 0 0;
+      bottom: 0;
+      right: 10px;
+    }
+
+    b:after{
+      width: 10px;
+      height: 10px;
+      border-radius: 10px 10px 0 0;
+      bottom: 0;
+      right: -5px;
+    }
+  </style>

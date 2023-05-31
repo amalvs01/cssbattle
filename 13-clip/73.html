@@ -1,0 +1,77 @@
+<div>
+  <p></p>
+</div>
+
+<style>
+  
+  body{
+    background: #F3AC3C;
+  }
+  
+  div,p,:before,:after{
+    content: '';
+    position: absolute;
+  }
+
+  body:before{
+    background: #1A4341;
+    width: 40px;
+    height: 40px;
+    border: 10px solid #998235;
+    border-radius: 50%;
+    top: 65px;
+    left: 115px;
+    -webkit-box-reflect: right 50px;
+  }
+  
+  div {
+    width: 150px;
+    height: 150px;
+    background: #998235;
+    border-radius: 50% 50% 60px 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  
+  div:before{
+    background: #1A4341;
+    width: 40px;
+    height: 40px;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  div:after{
+    background: #1A4341;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 60px;
+    left: 25px;
+    -webkit-box-reflect: right 60px;
+  }
+  
+  p{
+    margin: 0;
+    background: #FFFFFF;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px 0 0 50px;
+    bottom: 15px;
+    right: 50%;
+    -webkit-box-reflect: right;
+  }
+
+  p:after{
+    width: 20px;
+    height: 40px;
+    border: 10px solid #1A4341;
+    border-radius: 50px;
+    bottom: 10px;
+    right: -5px;
+    clip-path: polygon(0 100%,100% 100%,100% 20px,50% 20px,50% 40px,0 40px);
+  }
+</style>

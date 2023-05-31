@@ -1,0 +1,54 @@
+<p><p><p><p>
+  
+  <style>
+    body{
+      background: #191919;
+      display: flex;
+      margin: 0;
+      padding: 0 0 90px 45px;
+    }
+  
+    :before,
+    :after{
+      content: '';
+      position: absolute;
+      background: currentcolor;
+    }
+    
+    p {
+      width: 50px;
+      height: 40px;
+      color: #FE5F55;
+      background: currentcolor;
+      border-radius: 50%;
+      margin: auto 10px 0;
+      position: relative;
+    }
+  
+    p:before{
+      width: 10px;
+      height: 100px;
+      right: 0;
+      bottom: 20px;
+    }
+  
+    p:after{
+      width: 30px;
+      height: 10px;
+      right: -30px;
+      top: -80px;
+    }
+  
+    p:nth-child(2):after{
+      width: 50px;
+      right: 0;
+    }
+  
+    p:nth-child(3){
+      color: #A64942;
+    }
+  
+    p:nth-child(4):after{
+      -webkit-box-reflect: below 10px;
+    }
+  </style>

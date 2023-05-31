@@ -1,0 +1,42 @@
+<div></div>
+
+<style>
+  
+  body{
+    background: #D25B70;
+  }
+  
+  div {
+    width: 100px;
+    height: 100px;
+    background: #F7F3DA;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+  }
+
+  :before,
+  :after{
+    content: '';
+    position: absolute;
+  }
+
+  div:before{
+    width: 60px;
+    height: 60px;
+    background: #6CB3A9;
+    transform-origin: 0 0;
+    transform: rotate(-143deg);
+  }
+
+  div:after{
+    width: 80px;
+    height: 80px;
+    background: #F6DF96;
+    right: 0;
+    transform-origin: 100% 0;
+    transform: rotate(127deg);
+  }
+  
+</style>

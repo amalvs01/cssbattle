@@ -1,0 +1,41 @@
+<div></div>
+
+<style>
+  body{
+    background: #293462;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div {
+    width: 200px;
+    height: 200px;
+    background: #FFF1C1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(45deg)
+  }
+
+  div:before,
+   div:after{
+     content:  '';
+     position: absolute;
+     background: #FE5F55;
+   }
+
+  div:before{
+    width: 30px;
+    height: 30px;
+     right: calc(50% - 1px);
+     bottom: 0;
+  }
+
+    div:after{
+    width: 50%;
+    height: 100%;
+      left: 50%;
+     top: 42px;
+  }
+</style>
